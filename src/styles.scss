@@ -1,4 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+@import "/src/variable";
+//
+// $fa-font-path : '../node_modules/font-awesome/fonts';
+// @import '../node_modules/font-awesome/scss/font-awesome';
+
+h3 {margin: 0;}
+
 body {
   font: 300 16px/1 Muli, Tahoma, sans-serif;
   color: #505050;
@@ -21,6 +28,5 @@ button:hover {
   cursor: pointer;
 }
 section {
-  padding: 5% 20px;
+  padding: 40px 5%;
 }
-@import "/src/variable";
