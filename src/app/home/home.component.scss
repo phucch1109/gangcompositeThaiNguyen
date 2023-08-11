@@ -102,10 +102,43 @@ h3 {
 .product-container {
   display: grid;
   grid-template-columns: 30% 30% 30%;
+  justify-content: space-between;
 }
 
 .product-item {
+  display: grid;
+  
+  text-align: center;
   img {
     width: 100%;
+    height: 300px;
+    grid-column: span 2;
   }
+  h4{
+    background-color: rgba(34, 69, 255, 1);
+    color: white;
+    font-family: 'Crimson Pro';
+    padding: 10px;
+    font-weight: 500;
+    font-size: 18px;
+    grid-column: span 2;
+  }
+  h5{
+    font-family: 'Crimson Pro';
+    border: 2px solid gray;
+    font-size: 14px;
+    padding: 10px;
+  }
+  p {
+    font-family: 'Crimson Pro';
+    border: 2px solid gray;
+    padding: 10px;
+  }
+
+}
+
+.product-introduction-text {
+  width: 70%;
+  text-align: center;
+  margin: 20px auto;
 }
