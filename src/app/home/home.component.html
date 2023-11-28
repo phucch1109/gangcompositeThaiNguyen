@@ -70,41 +70,37 @@
   <div class="header-underline-image"></div>
   <p class="product-introduction-text">Hiện nay chúng tôi đang cung cấp và sản xuất, lắp đặt kinh doanh các lĩnh vực sau: Nắp hố ga, Nắp bể cáp, Song chắn rác, Tấm sàn Grating...</p>
   <div class="product-container">
-    <div class="product-item">
-      <img src="/assets/z3871730215495_7f30a1c36bc52618fda1121cfda982c1.jpg">
-      <h4>NẮP HỐ GA</h4>
+    <div *ngFor="let item of products" class="product-item">
+      <img [src]="item.image[0]">
+      <h4>{{item.name}}</h4>
       <h5>Chất liệu</h5>
-      <p>Composite hoặc gang</p>
+      <p>{{item.materials}}</p>
       <h5>Tải trọng</h5>
-      <p>12.5 tấn , 25 tấn, 40 tấn</p>
+      <p>{{item.load}}</p>
       <h5>Kích thước</h5>
-      <p>100x300 , 100x400, 1000x500</p>
-    </div>
-    <div class="product-item">
-      <img src="/assets/z3871730215495_7f30a1c36bc52618fda1121cfda982c1.jpg">
-      <h4>NẮP HỐ GA</h4>
-      <h5>Chất liệu</h5>
-      <p>Composite hoặc gang</p>
-      <h5>Tải trọng</h5>
-      <p>12.5 tấn , 25 tấn, 40 tấn</p>
-      <h5>Kích thước</h5>
-      <p>100x300 , 100x400, 1000x500</p>
-    </div>
-    <div class="product-item">
-      <img src="/assets/z3871730215495_7f30a1c36bc52618fda1121cfda982c1.jpg">
-      <h4>NẮP HỐ GA</h4>
-      <h5>Chất liệu</h5>
-      <p>Composite hoặc gang</p>
-      <h5>Tải trọng</h5>
-      <p>12.5 tấn , 25 tấn, 40 tấn</p>
-      <h5>Kích thước</h5>
-      <p>100x300 , 100x400, 1000x500</p>
+      <p>{{item.size}}</p>
     </div>
   </div>
 </section>
-<section>
+<section class="certificate-section">
   <h3>Giấy chứng nhận</h3>
   <div class="header-underline-image"></div>
+  <div>
+    <img src="/assets/product/certificate1.webp">
+    <img src="/assets/product/certificate2.webp">
+    <img src="/assets/product/certificate3.webp">
+  </div>
+</section>
+<section class="production-section">
+  <h3>Hình ảnh gia công</h3>
+  <div class="header-underline-image"></div>
+  <img src="/assets/06d2fac7569d00a9c969baba912fbfd6efddeb0287b73e66fa1464af.webp">
+  <img src="/assets/6ca9cd01a5c421087dbac193ea4579a1a1bfc7b91dfd3a6b1a5c9078.webp">
+  <img src="/assets/9b144cfbcd1f0c0f77e9512da91daee0658b076c5eb30dbd8201b09e.webp">
+  <img src="/assets/24c4c37555c306cf844b2f3ffb4c6d5d58d162aaf1d03f4ab47f342c.webp">
+  <img src="/assets/ce91d82fb0abe62e197c0bc0625de00801c59953476c3cd585429c80.webp">
+  <img src="/assets/z3871727984193_f09ac66cc130ca1e17cac5dd60936e77.jpg">
+  <img src="/assets/z3871730215495_7f30a1c36bc52618fda1121cfda982c1.jpg">
+  <img src="/assets/z3871731283958_e77a03c00ff2733e303768ae38f86c9a.jpg">
 </section>
 
-<app-footer></app-footer>

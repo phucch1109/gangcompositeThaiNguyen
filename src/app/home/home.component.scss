@@ -101,8 +101,10 @@ h3 {
 
 .product-container {
   display: grid;
-  grid-template-columns: 30% 30% 30%;
-  justify-content: space-between;
+  grid-template-columns: 350px 350px 350px;
+  justify-content: center;
+  column-gap: 20px;
+  row-gap: 20px;
 }
 
 .product-item {
@@ -112,26 +114,27 @@ h3 {
   img {
     width: 100%;
     height: 300px;
+    object-fit: cover;
     grid-column: span 2;
   }
   h4{
     background-color: rgba(34, 69, 255, 1);
     color: white;
     font-family: 'Crimson Pro';
-    padding: 10px;
+    padding: 16px 10px;
     font-weight: 500;
     font-size: 18px;
     grid-column: span 2;
   }
   h5{
     font-family: 'Crimson Pro';
-    border: 2px solid gray;
+    border: 1px solid gray;
     font-size: 14px;
     padding: 10px;
   }
   p {
     font-family: 'Crimson Pro';
-    border: 2px solid gray;
+    border: 1px solid gray;
     padding: 10px;
   }
 
@@ -141,4 +144,27 @@ h3 {
   width: 70%;
   text-align: center;
   margin: 20px auto;
+}
+
+.certificate-section {
+  background-color: #fff0f0;
+  img {
+    width: 350px;
+    height: 500px;
+    margin-left: 30px;
+  }
+  div{
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+  }
+  img:nth-child(1) {
+    margin-top: 20px;
+  }
+  img:nth-child(2) {
+    margin-top: 40px;
+  }
+  img:nth-child(3) {
+    margin-top: 60px;
+  }
 }
